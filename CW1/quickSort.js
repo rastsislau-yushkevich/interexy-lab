@@ -1,21 +1,27 @@
 const quickSort = (arr) => {
     // let time = performance.now();
-    if(arr.length < 2) {
+    const size = arr.length; //для читабельности
+    if(size < 2) {
         return arr
     }
-
-    let pivot = arr[Math.floor(arr.length/2)];
-    let arrLower = [];
-    let equals = [];
-    let arrBigger = [];
+    const middle = Math.floor(arr.length/2);
+    const pivot = arr[middle];
+    const arrLower = [];
+    const equals = [];
+    const arrBigger = [];
 
     for(let elem of arr) {
         if(elem < pivot) {
-            arrLower.push(elem)
-        } else if (elem == pivot) {
-            equals.push(elem)
-        } else {
-            arrBigger.push(elem)
+            arrLower.push(elem);
+            continue;
+        } 
+        if (elem == pivot) {
+            equals.push(elem);
+            continue;
+        }
+        if(elem > pivot) {
+            arrBigger.push(elem);
+            continue;
         }
     }
 

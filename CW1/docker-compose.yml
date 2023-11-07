@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  bubblesort:
+    build: .
+    ports:
+      - 3000:3000
+    command: node bubbleSort.js
+  quicksort:
+    build: .
+    ports:
+      - 3001:3001
+    command: node quickSort.js
