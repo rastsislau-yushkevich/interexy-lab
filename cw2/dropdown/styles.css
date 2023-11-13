@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  height: 50px;
+  background-color: red;
+}
+
+.drop {
+  background-color: darkgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.dropdown {
+  background-color: blue;
+  display: none;
+}
+
+.drop:hover + .dropdown {
+  display: block;
+}
