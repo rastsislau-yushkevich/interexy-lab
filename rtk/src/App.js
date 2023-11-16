@@ -8,12 +8,12 @@ import RefTutorial from './features/RefTutorial';
 function App() {
   return (
     <div>
-      {/* <Counter /> */}
-      {/* <PostsList /> */}
-      {/* <FetchedPostsList /> */}
-      {/* <FetchedAlbumsList /> */}
-      {/* <CounterWithText /> */}
-      {/* <RefTutorial /> */}
+      <Counter />
+      <PostsList />
+      <FetchedPostsList />
+      <FetchedAlbumsList />
+      <CounterWithText />
+      <RefTutorial />
     </div>
   );
 }

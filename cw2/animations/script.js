@@ -7,6 +7,21 @@ let duration = 3000;
 let startTime = null;
 let endTime = null;
 
+const arr = Array.from({ length: 10000 }, () => Math.floor(Math.random() * 10000))
+
+// bubbleSort(arr)
+const sortResult = document.getElementById('sort-result')
+const sortWorker = new Worker('sortWorker.js');
+
+if(window.Worker) {
+  sortWorker.postMessage(['some', 'data']);
+  sortWorker.onmessage = (e) => {
+    sortResult.textContent = e.data
+  }
+} else {
+  console.log('No worker')
+}
+
 const animationLeft = (time) => {
   if(!endTime) {
     endTime = time
@@ -144,5 +159,3 @@ const animateSetTimeout = () => {
   }
   moveBlock()
 }
-
-// animateSetTimeout()

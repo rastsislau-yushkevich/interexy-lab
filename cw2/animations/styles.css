@@ -75,3 +75,7 @@ section {
 .animation-timeout {
   background-color: violet;
 }
+
+#sort-result {
+  max-width: 100%;
+}
