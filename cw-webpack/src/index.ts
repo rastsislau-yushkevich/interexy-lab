@@ -11,7 +11,7 @@ let endTime: number = 0;
 // const arr: number[] = Array.from({ length: 10000 }, () => Math.floor(Math.random() * 10000))
 // bubbleSort(arr)
 const sortResult: HTMLElement | null = document.getElementById('sort-result');
-const sortWorker: Worker = new Worker('sortWorker.js');
+const sortWorker: Worker = new Worker('./sortWorker.js');
 
 (async function() {
   const characters = await getCharactersPromises();
