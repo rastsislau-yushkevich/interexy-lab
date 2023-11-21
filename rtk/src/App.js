@@ -4,6 +4,7 @@ import FetchedAlbumsList from './features/FetchedAlbumsList';
 import FetchedPostsList from './features/FetchedPostsList';
 import PostsList from './features/PostsList';
 import RefTutorial from './features/RefTutorial';
+import YandexCounter from './features/YandexCounter';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <FetchedAlbumsList />
       <CounterWithText />
       <RefTutorial />
+      <YandexCounter />
     </div>
   );
 }
